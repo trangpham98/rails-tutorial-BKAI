@@ -18,6 +18,10 @@ gem "bcrypt"
 gem "faker", "1.7.3"
 gem "will_paginate",           "3.1.7"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "sidekiq"
+gem "redis"
+gem "redis-namespace"
+gem "dotenv-rails", groups: [:development, :test]
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

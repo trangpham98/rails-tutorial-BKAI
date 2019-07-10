@@ -49,7 +49,7 @@ class UserControllerTest < ActionDispatch::IntegrationTest
                                     user: { password:              "password",
                                             password_confirmation: "password",
                                             admin: true } }
-    assert_not @other_user.reload.admin?
+   assert_not @other_user.reload.admin?
   end
 
   test "should redirect destroy when not logged in" do
